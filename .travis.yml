@@ -1,0 +1,5 @@
+language: java
+language: python
+env:
+  script:
+- script/ci
