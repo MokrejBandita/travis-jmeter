@@ -1,5 +1,8 @@
-language: java
-language: python
-env:
-  script:
+language: ruby
+rvm:
+-2.2
+-jruby
+-rbx-2
+
+script:
 - script/ci
