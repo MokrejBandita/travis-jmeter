@@ -1,0 +1,5 @@
+#!/bin/bash
+
+  script/server &
+  sleep 3
+  script/executeTest.sh
