@@ -6,5 +6,10 @@ before_script:
 - script/prepareJmeter.sh
 
 script:
-- chmod 755 script/executeTest.sh
-- script/executeTest.sh
+- jmeter/apache-jmeter-3.0/bin/jmeter -n -t test/smoke.jmx -l jmeter.csv
+
+# addons:
+# artifacts: true
+#  paths:
+#  - $HOME/jmeter.csv
+#  - $home/perfmon.csv
