@@ -1,3 +1,4 @@
 language: java
 script:
-- script/ci
+- chmod 755 script/executeTest.sh
+- script/executeTest.sh
